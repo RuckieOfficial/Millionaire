@@ -18,6 +18,14 @@ using System.Windows.Shapes;
 namespace Millionire {
     public partial class Highscore : Window {
 
+        static string pathHS = @"../../Json/Highscore.json";
+        static JsonSerializerSettings settings = new JsonSerializerSettings {
+            TypeNameHandling = TypeNameHandling.All
+        };
+
+        static string jsonFromFile = File.ReadAllText(pathHS);
+        static List<HighScore_items> highscore = JsonConvert.DeserializeObject<List<HighScore_items>>(jsonFromFile, settings);
+
         public Highscore() {
             InitializeComponent();
             Score();
@@ -25,17 +33,15 @@ namespace Millionire {
 
         void Send_name(object sender, RoutedEventArgs e) {
             string xJmeno = jmeno.ToString();
-            MessageBox.Show(xJmeno);
+            highscore.Add(new HighScore_items(1000, xJmeno));
+
+            string jsonToFile = JsonConvert.SerializeObject(highscore, settings);
+            File.WriteAllText(pathHS, jsonToFile);
         }
 
         void Score() {
-            string pathHS = @"../../Json/Highscore.json";
-            JsonSerializerSettings settings = new JsonSerializerSettings {
-                TypeNameHandling = TypeNameHandling.All
-            };
-
-            string jsonFromFile = File.ReadAllText(pathHS);
-            List<HighScore_items> ukol = JsonConvert.DeserializeObject<List<HighScore_items>>(jsonFromFile, settings);
+           // highscore.Add(new HighScore_items(1000, "neco"));
+            
         }
 
     }
