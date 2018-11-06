@@ -24,6 +24,7 @@ namespace Millionire {
         };
 
         static string jsonFromFile = File.ReadAllText(pathHS);
+        //static List<HighScore_items> highscore = new List<HighScore_items>();
         static List<HighScore_items> highscore = JsonConvert.DeserializeObject<List<HighScore_items>>(jsonFromFile, settings);
 
         public Highscore() {
@@ -32,16 +33,17 @@ namespace Millionire {
         }
 
         void Send_name(object sender, RoutedEventArgs e) {
-            string xJmeno = jmeno.ToString();
-            highscore.Add(new HighScore_items(1000, xJmeno));
+            highscore.Add(new HighScore_items(1000, jmeno.Text));
 
             string jsonToFile = JsonConvert.SerializeObject(highscore, settings);
             File.WriteAllText(pathHS, jsonToFile);
         }
 
         void Score() {
-           // highscore.Add(new HighScore_items(1000, "neco"));
-            
+            foreach (var item in highscore) {
+                jmeno1.Content = item.nick + " " + item.score;
+            } 
+
         }
 
     }

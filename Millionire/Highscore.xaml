@@ -47,16 +47,16 @@
                     <Setter Property="FontWeight" Value="Bold"/>
                 </Style>
             </StackPanel.Resources>
-            <Label Content="1" Name="Poz10" Foreground="MintCream" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="2" Name="Poz9" Foreground="#FFF563C3" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="3" Name="Poz8" Foreground="#d70a94" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="4" Name="Poz7" Foreground="#c20b93" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="5" Name="Poz6" Foreground="#9a0c90" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="6" Name="Poz5" Foreground="#800c8e" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="7" Name="Poz4" Foreground="#6f0c8d" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="8" Name="Poz3" Foreground="#550d8b" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="9" Name="Poz2" Foreground="#FF42096C" Grid.RowSpan="2" Grid.Column="3"/>
-            <Label Content="10" Name="Poz1" Foreground="#FF350857" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="1" Name="Poz1" Foreground="MintCream" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="2" Name="Poz2" Foreground="#FFF563C3" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="3" Name="Poz3" Foreground="#d70a94" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="4" Name="Poz4" Foreground="#c20b93" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="5" Name="Poz5" Foreground="#9a0c90" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="6" Name="Poz6" Foreground="#800c8e" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="7" Name="Poz7" Foreground="#6f0c8d" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="8" Name="Poz8" Foreground="#550d8b" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="9" Name="Poz9" Foreground="#FF42096C" Grid.RowSpan="2" Grid.Column="3"/>
+            <Label Content="10" Name="Poz10" Foreground="#FF350857" Grid.RowSpan="2" Grid.Column="3"/>
         </StackPanel>
         <StackPanel Grid.RowSpan="4" Grid.Column="2" Orientation="Vertical" VerticalAlignment="Bottom" Height="258" Grid.Row="1">
             <StackPanel.Resources>
