@@ -1,0 +1,140 @@
+{
+  "$type": "System.Collections.Generic.List`1[[Millionire.QaA, Millionire]], mscorlib",
+  "$values": [
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Jaký je rok?",
+      "odpoved1": "2010",
+      "odpoved2": "2020",
+      "odpoved3": "2015",
+      "odpoved4": "2018",
+      "obtiznost": 1
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Jakou barvu má slunce?",
+      "odpoved1": "modrou",
+      "odpoved2": "červenou",
+      "odpoved3": "zelenou",
+      "odpoved4": "žlutou",
+      "obtiznost": 1
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Kolik je druhá odmocnina ze sta?",
+      "odpoved1": "100",
+      "odpoved2": "200",
+      "odpoved3": "1",
+      "odpoved4": "10",
+      "obtiznost": 1
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "V pohádce Jana Wericha „Tři veteráni“ princezně Bosaně naroste",
+      "odpoved1": "sloní kel",
+      "odpoved2": "jelení paroh",
+      "odpoved3": "kančí tesák",
+      "odpoved4": "dlouhý nos",
+      "obtiznost": 1
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Kolik pilířů má korán?",
+      "odpoved1": "1",
+      "odpoved2": "3",
+      "odpoved3": "6",
+      "odpoved4": "5",
+      "obtiznost": 2
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Čočky rozdělujeme na vypouklé a",
+      "odpoved1": "kulové",
+      "odpoved2": "prasklé",
+      "odpoved3": "kulaté",
+      "odpoved4": "vyduté",
+      "obtiznost": 2
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Ve kterém století objevil Kryštof Kolumbus Ameriku?",
+      "odpoved1": "v sedmnáctém",
+      "odpoved2": "ve dvanáctém",
+      "odpoved3": "v třináctém",
+      "odpoved4": "v patnáctém",
+      "obtiznost": 3
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "V knize Boženy Němcové „Babička“ se psi ze Starého bělidla jmenují",
+      "odpoved1": "Satan a Troll",
+      "odpoved2": "Slon a Tygr",
+      "odpoved3": "Sumec a Tuleň",
+      "odpoved4": "Sultán a Tyrl",
+      "obtiznost": 4
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Rytmická schéma poezie se nazývá",
+      "odpoved1": "verš",
+      "odpoved2": "stopa",
+      "odpoved3": "takt",
+      "odpoved4": "metrum",
+      "obtiznost": 4
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Který chemický prvek má latinský název calcium?",
+      "odpoved1": "dusík",
+      "odpoved2": "železo",
+      "odpoved3": "uhlík",
+      "odpoved4": "vápník",
+      "obtiznost": 5
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Umělecká prohlídka zvaná kvadrineále se koná jedno za:",
+      "odpoved1": "pět let",
+      "odpoved2": "dva roky",
+      "odpoved3": "tři roky",
+      "odpoved4": "čtyři roky",
+      "obtiznost": 6
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Baribal je:",
+      "odpoved1": "míčová hra",
+      "odpoved2": "ostrov v Karibiku",
+      "odpoved3": "Keltský vůdce",
+      "odpoved4": "druh medvěda",
+      "obtiznost": 7
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Jaký byl příbuzenský vztah mezi přírodovědcem Janem Evangelistou Purkyněm a malířem Karlem Purkyněm?",
+      "odpoved1": "strýc a synovec",
+      "odpoved2": "bratranci",
+      "odpoved3": "sourozenci",
+      "odpoved4": "otec a syn",
+      "obtiznost": 8
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Orlando Bloom hrál ve filmové trilogii „Pán prstenů“ roli:",
+      "odpoved1": "Gandalfa",
+      "odpoved2": "Froda",
+      "odpoved3": "Aragorna",
+      "odpoved4": "Legolase",
+      "obtiznost": 9
+    },
+    {
+      "$type": "Millionire.QaA, Millionire",
+      "otazka": "Kolik soch miminek celkem šplhá nahoru a dolů po věži Žižkovského vysílače?",
+      "odpoved1": "5",
+      "odpoved2": "7",
+      "odpoved3": "12",
+      "odpoved4": "10",
+      "obtiznost": 10
+    }
+  ]
+}

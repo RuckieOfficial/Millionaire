@@ -1,0 +1,63 @@
+﻿<Window x:Class="Millionire.Gameover"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Millionire"
+        mc:Ignorable="d"
+        Title="Chcete být milionářem?" Height="500" Width="800" Left="350" Top="150" ResizeMode="NoResize" Icon="Img/ikona.ico"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="118*"/>
+            <RowDefinition Height="135*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="39"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="125*"/>
+            <ColumnDefinition Width="125*"/>
+            <ColumnDefinition Width="80*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Pozadí-->
+        <Image Grid.RowSpan="6" Grid.ColumnSpan="4" Margin="0,0,0,0" Source="Img/bg_wide.png" Stretch="Fill"/>
+        <!--Věta-->
+        <Label Content="Tentokrát to bohužel nevyšlo :/" FontFamily="Arial" FontSize="30" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Foreground="White">
+
+        </Label>
+        <Label Content="Tentokrát to bohužel nevyšlo :/" FontFamily="Arial" FontSize="30" HorizontalAlignment="Center" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Foreground="White">
+            <Label.Effect>
+                <BlurEffect/>
+            </Label.Effect>
+        </Label>
+        <!--Mainmenu-->
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="4" Grid.Row="2" Grid.Column="1" Height="217" Margin="23.6,0.2,23.6,0.4" Width="416">
+            <Button Content="Nová hra" Click="NewG"  Foreground="White" HorizontalAlignment="Center" Margin="54,0,44,5" VerticalAlignment="Center" Cursor="Hand" Width="318" BorderBrush="White" BorderThickness="0" Height="65">
+                <Button.Background>
+                    <ImageBrush ImageSource="Img/menu.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Menu" Click="Menu"  Foreground="White" HorizontalAlignment="Center" Margin="54,0,44,0" VerticalAlignment="Center" Cursor="Hand" Width="318" BorderBrush="White" BorderThickness="0" Height="65">
+                <Button.Background>
+                    <ImageBrush ImageSource="Img/menu.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Ukončit" Click="Exit"  Foreground="White" HorizontalAlignment="Center" Margin="54,5,44,0" VerticalAlignment="Center" Cursor="Hand" Width="318" BorderBrush="White" BorderThickness="0" Height="65">
+                <Button.Background>
+                    <ImageBrush ImageSource="Img/menu.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
