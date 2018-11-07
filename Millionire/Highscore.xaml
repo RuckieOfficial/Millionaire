@@ -39,6 +39,7 @@
         <Rectangle Grid.Column="1" Fill="#FF111111" HorizontalAlignment="Left" Height="258" Margin="0,56,0,0" Grid.Row="1" Grid.RowSpan="4" Stroke="Black" VerticalAlignment="Top" Width="484" Grid.ColumnSpan="2"/>
         <!--Pozice-cisla-->
         <!--Skore_pozice-->
+
         <StackPanel Grid.RowSpan="4" Grid.Column="1" Orientation="Vertical" VerticalAlignment="Bottom" Height="258" Grid.Row="1">
             <StackPanel.Resources>
                 <Style TargetType="Label">
@@ -85,6 +86,13 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-
+        <Button Content="&lt;" FontSize="50" Click="domex" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand" Width="89" BorderBrush="White" BorderThickness="0" Height="74" Grid.Column="3" Margin="35,0,0,0" Grid.Row="4">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE60A95" Offset="0"/>
+                    <GradientStop Color="#FF520D8B" Offset="0.993"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
