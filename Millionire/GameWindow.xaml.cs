@@ -43,6 +43,7 @@ namespace Millionire
         static string pathL4 = @"../../Sound/level10.wav";
         static string path2 = @"../../Sound/lose.wav";
         static string path3 = @"../../Sound/internet_surf.wav";
+        public int momentalniscore;
         static JsonSerializerSettings settings = new JsonSerializerSettings
         {
             TypeNameHandling = TypeNameHandling.All
@@ -61,7 +62,6 @@ namespace Millionire
 
         Internet internet = new Internet();
         Gameover gameover = new Gameover();
-        Highscore score = new Highscore();
 
         void Scoreboard() {
             void MomentalLVL() {
@@ -117,9 +117,16 @@ namespace Millionire
             level = 1;
         }
         void CreateQaA() {
+            if (level == 5) {
+                momentalniscore = 50000;
+            }
+            if (level == 8) {
+                momentalniscore = 500000;
+            }
             //Výhra
             if (level == 11) {
-                MessageBox.Show("Výhra");
+                Highscore score = new Highscore(momentalniscore);
+                momentalniscore = 5000000;
                 this.Close();
                 score.Show();
             }
@@ -350,6 +357,7 @@ namespace Millionire
         }
 
         void Answer(object sender, RoutedEventArgs e) {
+            Highscore score = new Highscore(momentalniscore);
             var tag = ((Button)sender).Tag;
             string x = tag.ToString();
             int kliknuto = Int32.Parse(x);
@@ -363,7 +371,8 @@ namespace Millionire
                     if (level < 5) {
                         GG();
                     } else {
-
+                        this.Close();
+                        score.Show();
                     }
                 }
             }
@@ -374,7 +383,12 @@ namespace Millionire
                     CreateQaA();
                 }
                 else {
-                    GG();
+                    if (level < 5) {
+                        GG();
+                    } else {
+                        this.Close();
+                        score.Show();
+                    }
                 }
             }
             if (kliknuto == 3) {
@@ -384,7 +398,12 @@ namespace Millionire
                     CreateQaA();
                 }
                 else {
-                    GG();
+                    if (level < 5) {
+                        GG();
+                    } else {
+                        this.Close();
+                        score.Show();
+                    }
                 }
             }
             if (kliknuto == 4) {
@@ -394,7 +413,12 @@ namespace Millionire
                     CreateQaA();
                 }
                 else {
-                    GG();
+                    if (level < 5) {
+                        GG();
+                    } else {
+                        this.Close();
+                        score.Show();
+                    }
                 }
             }
         }

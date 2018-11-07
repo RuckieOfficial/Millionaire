@@ -20,6 +20,7 @@ namespace Millionire
     {
         static string path2 = @"../../Sound/bg_sound.wav";
         SoundPlayer hudba2 = new SoundPlayer(path2);
+        int momentalniscore;
 
         static bool IsAlive = true;
 
@@ -32,7 +33,7 @@ namespace Millionire
         }
 
         void HighScore(object sender, RoutedEventArgs e) {
-            Highscore score = new Highscore();
+            Highscore score = new Highscore(momentalniscore);
             IsAlive = false;
             this.Close();
             score.Show();
