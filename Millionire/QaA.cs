@@ -10,7 +10,7 @@ namespace Millionire {
         public string odpoved1 { get; set; }
         public string odpoved2 { get; set; }
         public string odpoved3 { get; set; }
-
+        
         //Správně
         public string odpoved4 { get; set; }
         public int obtiznost { get; set; }
